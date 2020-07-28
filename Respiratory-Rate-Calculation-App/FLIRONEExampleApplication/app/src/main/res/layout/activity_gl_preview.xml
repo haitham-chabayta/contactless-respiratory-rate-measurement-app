@@ -1,0 +1,272 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@android:color/background_dark"
+             android:orientation="vertical"
+             tools:context=".GLPreviewActivity"
+             android:keepScreenOn="true"
+             android:id="@+id/topView"
+             android:touchscreenBlocksFocus="false">
+
+
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal|top"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="324px"
+            android:layout_height="144px"
+            android:background="@drawable/border"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <TextView
+            android:id="@+id/SecondsPreview"
+            android:layout_width="94dp"
+            android:layout_height="67dp"
+            android:padding="10dp"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.726" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/fullscreen_content">
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_top" style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:background="@color/black_overlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/battery_label"
+                android:id="@+id/batteryLabelTextView"
+                android:layout_margin="8dp"
+                android:layout_weight="0"
+                android:layout_gravity="left|center_vertical"
+                style="?actionMenuTextAppearance"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batteryChargeIndicator"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_lock_idle_charging"
+                android:tint="@color/accent_material_light"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/batteryLevelTextView"
+                android:layout_weight="0.48"
+                android:layout_gravity="left|center_vertical"
+                android:text="--" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cable"
+                android:id="@+id/chargeCableToggle"
+                android:layout_weight="0.10"
+                android:checked="false"
+                android:visibility="invisible"
+                android:onClick="onSimulatedChargeCableToggleClicked" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vividButton"
+                style="?metaButtonBarButtonStyle"
+                android:textOff="@string/normal"
+                android:textOn="@string/vivid"
+                android:checked="true"
+                android:onClick="onVividClicked"/>
+
+            <Button
+                android:layout_width="51dp" style="?metaButtonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="@string/performTuning"
+                android:id="@+id/tuneButton"
+                android:onClick="onTuneClicked" />
+
+            <ToggleButton
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rotate_on"
+                android:id="@+id/switch_rotate"
+                android:onClick="onRotateClicked"
+                android:layout_gravity="right"
+                android:textOff="@string/rotate_off"
+                android:textOn="@string/rotate_on"
+                style="?metaButtonBarButtonStyle" />
+
+
+        </LinearLayout>
+        <FrameLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            tools:ignore="UselessParent"
+            android:columnCount="3"
+            android:rowCount="2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:baselineAligned="false"
+                android:id="@+id/imageTypeListContainer"
+                android:focusableInTouchMode="false"
+                android:visibility="gone">
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageTypeListView"
+                    android:layout_gravity="center_vertical|bottom|left"
+                    android:layout_marginBottom="60dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:alpha="0.9"
+                    android:layout_weight="0.25"
+                    android:choiceMode="singleChoice"
+                    android:clickable="true"
+                    android:dividerHeight="0dp" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/paletteListView"
+                    android:layout_marginBottom="60dp"
+                    android:alpha="0.9"
+                    android:layout_gravity="bottom|right"
+                    android:layout_weight="0.75"
+                    android:choiceMode="singleChoice"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:clickable="true"
+                    android:dividerHeight="0dp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:src="@drawable/ic_fiber_manual_record_black_24dp"
+                android:onClick="onCaptureImageClicked" />
+
+            <ToggleButton android:id="@+id/change_view_button" style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_weight="0.33" android:textOff="@string/change_view"
+                android:textOn="@string/change_view_retract"
+                android:onClick="onChangeViewClicked"
+                android:layout_gravity="bottom|left" />
+
+            <Button
+                android:layout_width="wrap_content" style="?metaButtonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="@string/connectSim"
+                android:id="@+id/connect_sim_button"
+                android:onClick="onConnectSimClicked"
+                android:layout_gravity="center_horizontal|bottom|right" />
+
+
+        </FrameLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuningProgressBar"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txtTuning"
+            android:id="@+id/tuningTextView"
+            android:labelFor="@id/tuningProgressBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please Connect FLIR One"
+            android:id="@+id/pleaseConnect"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/spotMeterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.9"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <AbsoluteLayout
+        android:id="@+id/recDetect"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:background="@drawable/rectangle"
+        ></AbsoluteLayout>
+
+
+
+</FrameLayout>

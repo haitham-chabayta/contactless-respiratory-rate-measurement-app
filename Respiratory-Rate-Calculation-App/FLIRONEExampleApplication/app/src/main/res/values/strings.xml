@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RR Calculation</string>
+    <string name="change_view">Change View \u21EA</string>
+    <string name="change_view_retract">Change View \u21B2</string>
+    <string name="connectSim">Toggle Sim</string>
+    <string name="performTuning">Tune</string>
+    <string name="rotate_on">\u21BA</string>
+    <string name="rotate_off">\u21BB</string>
+    <string name="battery_label">Batt:</string>
+    <string name="txtTuning">Tuning...</string>
+    <string name="startNetStream">Stream</string>
+    <string name="stopNetStream">Disconnect</string>
+    <string name="normal">Normal</string>
+    <string name="vivid">Vivid</string>
+    <string name="title_activity_results">resultsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

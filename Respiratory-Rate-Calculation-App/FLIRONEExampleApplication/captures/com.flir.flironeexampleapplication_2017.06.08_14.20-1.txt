@@ -1,0 +1,219 @@
+CURRENT STATS:
+System memory usage:
+  SOff/Norm: 1 samples:
+    Cached: 1.7GB min, 1.7GB avg, 1.7GB max
+    Free: 147MB min, 147MB avg, 147MB max
+    ZRam: 12KB min, 12KB avg, 12KB max
+    Kernel: 263MB min, 263MB avg, 263MB max
+    Native: 205MB min, 205MB avg, 205MB max
+  SOn /Norm: 2 samples:
+    Cached: 1.4GB min, 1.5GB avg, 1.7GB max
+    Free: 120MB min, 579MB avg, 1.0GB max
+    ZRam: 12KB min, 12KB avg, 12KB max
+    Kernel: 193MB min, 228MB avg, 263MB max
+    Native: 186MB min, 196MB avg, 205MB max
+
+Per-Package Stats:
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+      * com.flir.flironeexampleapplication / u0a171 / v18:
+               TOTAL: 9.0% (57MB-71MB-160MB/47MB-47MB-147MB over 4)
+                 Top: 9.0% (57MB-71MB-160MB/47MB-47MB-147MB over 4)
+          (Last Act): 0.71%
+            (Cached): 4.0% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Summary:
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+           TOTAL: 9.0% (57MB-71MB-160MB/47MB-47MB-147MB over 4)
+             Top: 9.0% (57MB-71MB-160MB/47MB-47MB-147MB over 4)
+      (Last Act): 0.71%
+        (Cached): 4.0% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Run time Stats:
+  SOff/Norm: +26m20s419ms
+  SOn /Norm: +20m9s327ms (running)
+      TOTAL: +46m29s746ms
+
+Memory usage:
+  Kernel : 240MB (24 samples)
+  Native : 199MB (24 samples)
+  Persist: 226MB (55 samples)
+  Top    : 117MB (103 samples)
+  ImpFg  : 152MB (132 samples)
+  ImpBg  : 47MB (58 samples)
+  Service: 70MB (197 samples)
+  Receivr: 139KB (168 samples)
+  Home   : 10MB (6 samples)
+  LastAct: 35MB (56 samples)
+  CchAct : 199MB (8 samples)
+  CchCAct: 9.2MB (10 samples)
+  CchEmty: 212MB (173 samples)
+  Cached : 1.6GB (24 samples)
+  Free   : 435MB (24 samples)
+  Z-Ram  : 12KB (24 samples)
+  TOTAL  : 3.5GB
+  ServRst: 846 (29 samples)
+
+          Start time: 2017-06-08 13:33:23
+  Total elapsed time: +46m36s816ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable      2     1     1     1     1     1     1     5     7     5     6
+Zone   0     Reclaimable      8    10     1     0     1     0     1     0     0     0     0
+Zone   0         Movable      0     0     1     0     0     1     1     1     1     1   303
+Zone   0             CMA      1     1     1     1     2     4     1     0     0     0    29
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable      0     1     1     0     0     1     0     0     0     6     9
+Zone   0     Reclaimable      1     1     1     0     0     0     1     0     1     0     0
+Zone   0         Movable      0     0     1     0     1     0     1     1     1     0   351
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     2
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOff/Norm: 7 samples:
+    Cached: 1.1GB min, 1.3GB avg, 1.7GB max
+    Free: 62MB min, 288MB avg, 402MB max
+    ZRam: 12KB min, 21MB avg, 24MB max
+    Kernel: 263MB min, 313MB avg, 328MB max
+    Native: 164MB min, 174MB avg, 205MB max
+  SOn /Norm: 6 samples:
+    Cached: 0.88GB min, 1.3GB avg, 1.7GB max
+    Free: 42MB min, 315MB avg, 1.0GB max
+    ZRam: 12KB min, 16MB avg, 24MB max
+    Kernel: 193MB min, 299MB avg, 367MB max
+    Native: 166MB min, 176MB avg, 205MB max
+
+Per-Package Stats:
+  * com.flir.flironeexampleapplication / u0a171 / v16:
+      * com.flir.flironeexampleapplication / u0a171 / v16:
+               TOTAL: 2.8% (67MB-75MB-179MB/57MB-57MB-165MB over 6)
+                 Top: 2.8% (67MB-75MB-179MB/57MB-57MB-165MB over 6)
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+      * com.flir.flironeexampleapplication / u0a171 / v18:
+               TOTAL: 23% (57MB-56MB-209MB/47MB-47MB-196MB over 47)
+                 Top: 23% (57MB-56MB-209MB/47MB-47MB-196MB over 47)
+          (Last Act): 0.24% (152MB-152MB-152MB/138MB-138MB-138MB over 1)
+            (Cached): 0.47% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Summary:
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+           TOTAL: 26% (57MB-51MB-209MB/47MB-47MB-196MB over 53)
+             Top: 26% (57MB-51MB-209MB/47MB-47MB-196MB over 53)
+      (Last Act): 0.24% (152MB-152MB-152MB/138MB-138MB-138MB over 1)
+        (Cached): 0.47% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Run time Stats:
+  SOff/Norm: +1h35m3s263ms
+  SOn /Norm: +5h7m2s264ms
+      TOTAL: +6h42m5s527ms
+
+Memory usage:
+  Kernel : 303MB (91 samples)
+  Native : 176MB (91 samples)
+  Persist: 224MB (341 samples)
+  Top    : 227MB (862 samples)
+  ImpFg  : 134MB (1064 samples)
+  ImpBg  : 36MB (618 samples)
+  Service: 70MB (1252 samples)
+  Receivr: 113KB (1168 samples)
+  Home   : 22MB (65 samples)
+  LastAct: 11MB (452 samples)
+  CchAct : 23MB (13 samples)
+  CchCAct: 84MB (79 samples)
+  CchEmty: 202MB (847 samples)
+  Cached : 1.3GB (91 samples)
+  Free   : 309MB (91 samples)
+  Z-Ram  : 17MB (91 samples)
+  TOTAL  : 3.1GB
+  ServRst: 311KB (407 samples)
+
+          Start time: 2017-06-07 13:16:49
+  Total elapsed time: +1d1h3m6s731ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable      2     1     1     1     1     1     1     5     7     5     6
+Zone   0     Reclaimable      8    10     1     0     1     0     1     0     0     0     0
+Zone   0         Movable      0     0     1     0     0     1     1     1     1     1   303
+Zone   0             CMA      1     1     1     1     2     4     1     0     0     0    29
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable      0     1     1     0     0     1     0     0     0     6     9
+Zone   0     Reclaimable      1     1     1     0     0     0     1     0     1     0     0
+Zone   0         Movable      0     0     1     0     1     0     1     1     1     0   351
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     2
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOff/Norm: 1 samples:
+    Cached: 1.7GB min, 1.7GB avg, 1.7GB max
+    Free: 147MB min, 147MB avg, 147MB max
+    ZRam: 12KB min, 12KB avg, 12KB max
+    Kernel: 263MB min, 263MB avg, 263MB max
+    Native: 205MB min, 205MB avg, 205MB max
+  SOn /Norm: 2 samples:
+    Cached: 1.4GB min, 1.5GB avg, 1.7GB max
+    Free: 120MB min, 579MB avg, 1.0GB max
+    ZRam: 12KB min, 12KB avg, 12KB max
+    Kernel: 193MB min, 228MB avg, 263MB max
+    Native: 186MB min, 196MB avg, 205MB max
+
+Per-Package Stats:
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+      * com.flir.flironeexampleapplication / u0a171 / v18:
+               TOTAL: 57% (57MB-159MB-209MB/47MB-47MB-196MB over 30)
+                 Top: 57% (57MB-159MB-209MB/47MB-47MB-196MB over 30)
+          (Last Act): 0.95% (152MB-152MB-152MB/138MB-138MB-138MB over 1)
+            (Cached): 1.9% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Summary:
+  * com.flir.flironeexampleapplication / u0a171 / v18:
+           TOTAL: 57% (57MB-159MB-209MB/47MB-47MB-196MB over 30)
+             Top: 57% (57MB-159MB-209MB/47MB-47MB-196MB over 30)
+      (Last Act): 0.95% (152MB-152MB-152MB/138MB-138MB-138MB over 1)
+        (Cached): 1.9% (121MB-121MB-121MB/107MB-107MB-107MB over 1)
+
+Run time Stats:
+  SOff/Norm: +26m20s419ms
+  SOn /Norm: +1h14m23s502ms
+      TOTAL: +1h40m43s921ms
+
+Memory usage:
+  Kernel : 240MB (24 samples)
+  Native : 199MB (24 samples)
+  Persist: 230MB (87 samples)
+  Top    : 143MB (142 samples)
+  ImpFg  : 142MB (178 samples)
+  ImpBg  : 43MB (85 samples)
+  Service: 81MB (230 samples)
+  Receivr: 164KB (194 samples)
+  Home   : 23MB (7 samples)
+  LastAct: 18MB (71 samples)
+  CchAct : 92MB (8 samples)
+  CchCAct: 75MB (11 samples)
+  CchEmty: 186MB (221 samples)
+  Cached : 1.6GB (24 samples)
+  Free   : 435MB (24 samples)
+  Z-Ram  : 12KB (24 samples)
+  TOTAL  : 3.4GB
+  ServRst: 806 (55 samples)
+
+          Start time: 2017-06-08 12:39:00
+  Total elapsed time: +1h40m50s994ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable      2     1     1     1     1     1     1     5     7     5     6
+Zone   0     Reclaimable      8    10     1     0     1     0     1     0     0     0     0
+Zone   0         Movable      0     0     1     0     0     1     1     1     1     1   303
+Zone   0             CMA      1     1     1     1     2     4     1     0     0     0    29
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable      0     1     1     0     0     1     0     0     0     6     9
+Zone   0     Reclaimable      1     1     1     0     0     0     1     0     1     0     0
+Zone   0         Movable      0     0     1     0     1     0     1     1     1     0   351
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     2
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0

@@ -1,0 +1,52 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 2804277 Realtime: 2804277
+
+** MEMINFO in pid 7089 [com.flir.flironeexampleapplication] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    74768    74480        0        0   108544    78240    30303
+  Dalvik Heap     8817     7856        0        0    12299     7380     4919
+ Dalvik Other      367      356        0        0                           
+        Stack      520      520        0        0                           
+       Ashmem        2        0        0        0                           
+      Gfx dev    10614     7104      236        0                           
+    Other dev        4        0        4        0                           
+     .so mmap    10755      380     6000        0                           
+    .apk mmap      891      600        0        0                           
+    .ttf mmap       22        0        8        0                           
+    .dex mmap     2028     1972       56        0                           
+    .oat mmap     6518        0     3500        0                           
+    .art mmap     2660      652       48        0                           
+   Other mmap       21        4        0        0                           
+   EGL mtrack    24660    24660        0        0                           
+    GL mtrack    16504    16504        0        0                           
+      Unknown      879      848        0        0                           
+        TOTAL   160030   135936     9852        0   120843    85620    35222
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     8556
+         Native Heap:    74480
+                Code:    12516
+               Stack:      520
+            Graphics:    48504
+       Private Other:     1212
+              System:    14242
+ 
+               TOTAL:   160030       TOTAL SWAP PSS:        0
+ 
+ Objects
+               Views:       43         ViewRootImpl:        1
+         AppContexts:        2           Activities:        1
+              Assets:        2        AssetManagers:        2
+       Local Binders:       11        Proxy Binders:       16
+       Parcel memory:        2         Parcel count:       11
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

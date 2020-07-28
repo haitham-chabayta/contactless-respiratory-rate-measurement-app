@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\OneDrive_2020-07-21\\FLIRONEExampleApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\OneDrive_2020-07-21\\FLIRONEExampleApplication\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "10,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "464,17",
+                        "endLines": "12,8",
+                        "endColumns": "12,12",
+                        "endOffsets": "623,458"
+                    },
+                    "to": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,219",
+                        "endLines": "4,11",
+                        "endColumns": "12,12",
+                        "endOffsets": "214,660"
+                    }
+                }
+            ]
+        }
+    ]
+}

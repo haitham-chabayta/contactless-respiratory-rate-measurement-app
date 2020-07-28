@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:flironesdk:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/flironesdk/build/.transforms/d03cccbf6eed270d021a2d9e99a95bb0/flironesdk/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/flironesdk/build/.transforms/d03cccbf6eed270d021a2d9e99a95bb0/flironesdk/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
