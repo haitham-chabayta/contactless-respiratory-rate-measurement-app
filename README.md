@@ -52,65 +52,54 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://master.d2r7fs8fky214e.amplifyapp.com/)
 
-Respiratory rate calculator is an android native application that measures the respiratory rate for users and detects breathing disorders. The application measures the breath temperature of the user for 30 seconds with the help of a flir one mobile thermal camera and flir one SDK. Before starting to record the breath temperature the area under of the nose of the user is detected using OpenCV
+Respiratory rate calculator is an android native application that measures the respiratory rate for users and detects breathing disorders. The application measures the breath temperature of the user for 30 seconds with the help of a flir one mobile thermal camera and flir one SDK. Before starting to record, the area under of the nose of the user is detected using OpenCV to monitor the breath temperature from that area. After 30 seconds of recording, the app will display the results of the test of the user including respiration signal, respiratory rate calculated, and if the respiratory rate calculated is normal or abnormal. The respiratory rate is the peak count of the respiration signal and an algorithim is implemented to detect the peaks of the signal after tbe signal has been filtered using a low pass butterworth filter.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Features
-* Animated graph plotting and transitions
-* Point tracer showing exact value
-* Dynamic graph plotting
+* Thermal camera tunning
+* Automatic detection for the area under the nose
+* Signal plotting
+* Signal filtering
+* Peak detection
 
 
 ### Built With
-* [Bootstrap](https://getbootstrap.com)
-* [React.js](https://reactjs.org/)
-* [D3.js](https://d3js.org/)
+* [Android studio](https://getbootstrap.com)
+* [Flir One SDK](https://reactjs.org/)
+* [OpenCV Android SDK](https://d3js.org/)
+* [Android Graph View](http://www.android-graphview.org/)
 
 ## Getting Started
 
 
 ### Prerequisites
 
-*Node / Check if you have node using:
-```sh
-node --version
-```
-If not install node from https://nodejs.org/en/
+*Android studio
+Install android studio from https://developer.android.com/studio
 
 *Git / Check if you have Git using:
 ```sh
 npm --version
 ```
-If not install node from https://git-scm.com/downloads
+If not install git from https://git-scm.com/downloads
+
+*Google API 28
+Install Google API 28 from android studio. / visit this link to see how: https://abhiandroid.com/androidstudio/download-new-api-for-sdk-android-studio.html
+
+
 
 ### Installation
 
-1. Clone the repo
+1. Clone the Repo 
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app.git
 ```
-2. Install NPM packages
-```sh
-npm install -g create-react-app
-```
-3. Run project:`
-```sh
-cd <ClonedRepo>
-npm start
-```
-4.Expected output in terminal (and should auto open browser to port 3000):
-Compiled successfully!
-```sh
-You can now view <project_name> in the browser.
+2. Import the project cloned on android studio
 
-  Local:            http://localhost:3000/
-  On Your Network:  http://<your_ip_address>:3000/
+3. Build the APK`
 
-Note that the development build is not optimized.
-To create a production build, use yarn build.
-```
-
+4.Send the APK to an android device and install the application
 
 
 <!-- CONTRIBUTING -->
@@ -137,25 +126,22 @@ LinkedIn: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Font Awesome](https://fontawesome.com)
-* [Web Icons](https://www.flaticon.com/free-icons/web)
-* [Bootstrap nav bar](https://getbootstrap.com/docs/4.0/components/navbar/)
-* [D3.js Line graph exacting point tracer](https://www.d3-graph-gallery.com/graph/line_cursor.html)
-* [D3.js graph animations](https://www.tutorialsteacher.com/d3js/animation-with-d3js)
+* [Graph View](http://www.android-graphview.org/)
+* [Flir one SDK Documentation](https://developer.flir.com/mobile/flironesdk/)
+* [Filtering algorithim java](http://www.dspguide.com/)
+* [Peak detection algorithim](https://gist.github.com/tiraeth/1306602)
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/haitham-chabayta/Polynomial-Equations-Graph-Plotter.svg?style=flat-square
-[contributors-url]: https://github.com/haitham-chabayta/Polynomial-Equations-Graph-Plotter/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/haitham-chabayta/Polynomial-Equations-Graph-Plotter.svg?style=flat-square
-[forks-url]: https://github.com/haitham-chabayta/Polynomial-Equations-Graph-Plotter/network/members
-[stars-shield]: https://img.shields.io/github/stars/haitham-chabayta/Polynomial-Equations-Graph-Plotter.svg?style=flat-square
-[stars-url]: https://github.com/haitham-chabayta/Polynomial-Equations-Graph-Plotter/stargazers
-[issues-shield]: https://img.shields.io/github/issues/haitham-chabayta/Polynomial-Equations-Graph-Plotter.svg?style=flat-square
-[issues-url]: https://github.com/haitham-chabayta/Polynomial-Equations-Graph-Plotter/issues
+[contributors-shield]: https://img.shields.io/github/contributors/haitham-chabayta/contactless-respiratory-rate-measurement-app.svg?style=flat-square
+[contributors-url]: https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/haitham-chabayta/contactless-respiratory-rate-measurement-app.svg?style=flat-square
+[forks-url]: https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/haitham-chabayta/contactless-respiratory-rate-measurement-app.svg?style=flat-square
+[stars-url]: https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/haitham-chabayta/contactless-respiratory-rate-measurement-app.svg?style=flat-square
+[issues-url]: https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 [product-screenshot]: images/screenshot.PNG
