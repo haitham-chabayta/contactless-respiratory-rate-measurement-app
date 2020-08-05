@@ -60,6 +60,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ### Features
 * Thermal camera tunning
 * Automatic detection for the area under the nose
+* Thermal camera battery percentage display
 * Signal plotting
 * Signal filtering
 * Peak detection
