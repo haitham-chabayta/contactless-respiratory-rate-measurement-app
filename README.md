@@ -75,8 +75,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Prerequisites
 
-*Android studio
-Install android studio from https://developer.android.com/studio
+*Android studio / Install android studio from https://developer.android.com/studio
 
 *Git / Check if you have Git using:
 ```sh
@@ -84,7 +83,7 @@ npm --version
 ```
 If not install git from https://git-scm.com/downloads
 
-*Google API 28
+*Google API 28 <br/>
 Install Google API 28 from android studio. / visit this link to see how: https://abhiandroid.com/androidstudio/download-new-api-for-sdk-android-studio.html
 
 
@@ -97,9 +96,9 @@ git clone https://github.com/haitham-chabayta/contactless-respiratory-rate-measu
 ```
 2. Import the project cloned on android studio
 
-3. Build the APK`
+3. Build the APK
 
-4.Send the APK to an android device and install the application
+4. Send the APK to an android device and install the application
 
 
 <!-- CONTRIBUTING -->
