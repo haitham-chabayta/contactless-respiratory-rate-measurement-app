@@ -50,7 +50,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://master.d2r7fs8fky214e.amplifyapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/)
+[![Product Name Screen Shot 2][product-screenshot-2]](https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/)
 
 Respiratory rate calculator is an android native application that measures the respiratory rate for users and detects breathing disorders. The application measures the breath temperature of the user for 30 seconds with the help of a flir one mobile thermal camera and flir one SDK. Before starting to record, the area under of the nose of the user is detected using OpenCV to monitor the breath temperature from that area. After 30 seconds of recording, the app will display the results of the test of the user including respiration signal, respiratory rate calculated, and if the respiratory rate calculated is normal or abnormal. The respiratory rate is the peak count of the respiration signal and an algorithim is implemented to detect the peaks of the signal after tbe signal has been filtered using a low pass butterworth filter.
 
@@ -144,3 +145,4 @@ LinkedIn: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 [product-screenshot]: images/screenshot.PNG
+[product-screenshot-2]: images/screenshot-2.PNG
