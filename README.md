@@ -144,5 +144,5 @@ LinkedIn: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 [issues-url]: https://github.com/haitham-chabayta/contactless-respiratory-rate-measurement-app/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
-[product-screenshot]: images/screenshot.PNG
-[product-screenshot-2]: images/screenshot-2.PNG
+[product-screenshot]: images/screenshot.jepg
+[product-screenshot-2]: images/screenshot-2.png
